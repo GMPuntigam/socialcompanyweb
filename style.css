@@ -181,7 +181,17 @@ div#artworkcredit h3{
 padding: 15px;
 }
 
-section#sun img{
+img#sun {
+    max-width: 900px;
+    padding-top: 30px;
+}
+
+img#Band {
+    max-width: 900px;
+    padding-top: 30px;
+}
+
+section#Band img{
     max-width: 900px;
     padding-top: 30px;
   }
@@ -192,7 +202,7 @@ section#news{
     margin: auto;
 }
 
-section#windmill img{
+img#windmill{
     max-width: 1459px;
     width: 90%;
 }
@@ -202,7 +212,7 @@ section#songs {
     height:80%;
     margin: auto;
 }
-section#songs img{
+img#songs{
     width:50%; 
     max-width: 400px;;
 }
