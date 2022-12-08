@@ -94,13 +94,13 @@ h3 {
 
 .scroller {
   height: 90%;
-  top: min(max(19vw, 130px), 350px);
+  top: min(max(19vw, 160px), 350px);
   overflow-y: scroll;
   overflow-x: hidden;
   font-family: sans-serif;
   scroll-padding: 0;
 	margin: auto;
-  position: fixed;
+  /* position: fixed; */
   scroll-behavior: smooth;
   scroll-padding-bottom: 4em;
   display: grid;
@@ -128,12 +128,20 @@ section#top{
 }
 section#socials{
     width: 100%;
-    top: min(15vw, 300px);
-    position: fixed;
+    /* top: min(15vw, 300px); */
+    /* position: fixed; */
     height: 50px;
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+div#content {
+    height: 100%;
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
 }
 
 section#sun{
