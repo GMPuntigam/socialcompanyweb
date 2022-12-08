@@ -94,7 +94,7 @@ h3 {
 
 .scroller {
   height: 90%;
-  top: min(max(17vw, 100px), 350px);
+  top: min(max(19vw, 130px), 350px);
   overflow-y: scroll;
   overflow-x: hidden;
   font-family: sans-serif;
