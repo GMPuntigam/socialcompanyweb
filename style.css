@@ -65,27 +65,17 @@ a.social {
     width: 40px;
     -webkit-mask-size: 100%;
     mask-size: 100%;
-    height: 40px;
 }
 
 h1 {
-  text-align: center;
-  margin: 15px;
-  width: 80%;
-  font-size: calc(max(6vw, 90px));
-  position: fixed;
-  background: -webkit-linear-gradient(#63bd61, #4fc0ad);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-h3 {
     text-align: center;
     font-size: calc(min(8vw, 100px));
     background: -webkit-linear-gradient(#63bd61, #4fc0ad);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Bebas Neue', cursive;
+    margin-block-start: 0.8em;
+    margin-block-end: 0.1em;
   }
 
 h2 {
@@ -95,7 +85,22 @@ h2 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Bebas Neue', cursive;
+    margin-block-start: 0.8em;
+    margin-block-end: 0.13em;
 }
+
+h3 {
+    text-align: center;
+    font-size: calc(min(3vw, 34px));
+    background: -webkit-linear-gradient(#63bd61, #4fc0ad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Bebas Neue', cursive;
+    margin-block-start: 0px;
+    margin-block-end: 10px;
+    margin: auto;
+}
+
 
 
 .scroller {
@@ -228,26 +233,9 @@ section#social{
   width: 100%;
 }
 
-a.mail:any-link {
-  color: #1ebe79;
-  text-decoration: underline 0.15em #1ebe79;
-  transition: text-decoration-color 0.4s;
-}
-
-a.mail:hover {
-  transition: text-decoration-color 0.4s;
-  text-decoration: underline 0.15em #1ebe79;
-}
-
-a:visited {
-  color: black;
-}
-a:link {
-  color: black;
-} 
-a:hover{
-  text-decoration-color: #1ebe79;
-}
-a.currentlyActive h3{
-  text-decoration-color: #1ebe79;
+h3.link a:hover{
+    background: -webkit-linear-gradient(#63bd61, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Bebas Neue', cursive;
 }
