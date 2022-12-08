@@ -32,9 +32,9 @@ p {
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     mask-position: center;
-    width: 100%;
-    -webkit-mask-size: 80%;
-    mask-size: 80%;
+    width: max(100%);
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
 }
 
 a.social#instagram {
@@ -44,10 +44,10 @@ a.social#instagram {
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     mask-position: center;
-    width: 2vw;
+    width: 40px;
     -webkit-mask-size: 100%;
     mask-size: 100%;
-    height: 2vw;
+    height: 40px;
 }
 
 
@@ -58,16 +58,16 @@ a.social#spotify {
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     mask-position: center;
-    width: 2vw;
+    width: 40px;
     -webkit-mask-size: 100%;
     mask-size: 100%;
-    height: 2vw;
+    height: 40px;
     
 }
 
 a.social {
     display: inline-block;
-    height: 50px;
+    height: 40px;
     margin-left: 0.5em;
     margin-right: 0.5em;
 }
@@ -85,7 +85,7 @@ h1 {
 
 h3 {
     text-align: center;
-    font-size: calc(max(4vw, 46px));
+    font-size: calc(min(8vw, 100px));
     background: -webkit-linear-gradient(#63bd61, #4fc0ad);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -94,7 +94,7 @@ h3 {
 
 .scroller {
   height: 90%;
-  top: 17vw;
+  top: min(max(17vw, 100px), 350px);
   overflow-y: scroll;
   overflow-x: hidden;
   font-family: sans-serif;
@@ -110,7 +110,7 @@ h3 {
   border-right: 1px solid white;
 	width: 80%;
     height: 80%;
-	min-width: 100vw;
+	min-width: 101vw;
   max-height: 130vh;
 	text-align: center;
 	position: relative;
@@ -119,15 +119,16 @@ h3 {
 }
 
 section#top{
-    width: 100%;
-    margin-left: 10%;
-    margin-right: 10%;
-    position: fixed;
-    height: 15vw;
+    margin: auto;
+    height: min(max(15vw, 100px), 300px);
+    display:flex;
+    flex-wrap: wrap;
+    width: min(70%, 1500px);
+    justify-content: center;
 }
 section#socials{
     width: 100%;
-    top: 15vw;
+    top: min(15vw, 300px);
     position: fixed;
     height: 50px;
     display:flex;
@@ -156,8 +157,8 @@ section#windmill img{
 }
 
 section#songs img{
-    width:"40%"; 
-    max-width:"187px"
+    width:50%; 
+    max-width: 400px;;
 }
 
 div.textholder {
