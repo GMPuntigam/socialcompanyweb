@@ -132,7 +132,7 @@ h3 {
 
 section#top{
     margin: auto;
-    height: max(min(6vw, 10%), 10vw);
+    height: max(min(6vw, 10%), 13vw);
     display:flex;
     flex-wrap: wrap;
     width: min(70%, 1500px);
