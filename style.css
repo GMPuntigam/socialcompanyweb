@@ -141,7 +141,7 @@ h3 {
 
 section#top{
     margin: auto;
-    height: max(min(6vw, 10%), 13vw);
+    height: min(max(min(6vw, 10%), 13vw), 300px);
     display:flex;
     flex-wrap: wrap;
     width: min(70%, 1500px);
@@ -149,7 +149,7 @@ section#top{
 }
 div.logo{
     margin: auto;
-    height: max(min(6vw, 10%), 13vw);
+    height: min(max(min(6vw, 10%), 13vw), 300px);
     display:flex;
     flex-wrap: wrap;
     width: 100%;
