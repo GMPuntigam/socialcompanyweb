@@ -13,6 +13,14 @@ body {
   margin: 0 auto;
 }
 
+.box
+{
+  background-color: #17e9c6;
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(1px);
+}
+
 p {
   position: relative;
   margin-top: auto;
@@ -64,6 +72,7 @@ a.social {
     width: 40px;
     -webkit-mask-size: 100%;
     mask-size: 100%;
+    background-color: #000000;
 }
 
 h1 {
@@ -115,6 +124,7 @@ h3 {
   scroll-padding-bottom: 4em;
   scroll-snap-type: y mandatory;
   display: grid;
+  background-color: #000000;
 }
 .scroller section {
   scroll-snap-align: start;
@@ -127,7 +137,6 @@ h3 {
 	position: relative;
   scroll-behavior: smooth;
   scroll-margin-top: 1em;
-  
 }
 
 section#top{
@@ -169,13 +178,22 @@ section#windmill{
 
 div#artworkcredit {
     position: relative;
-    background-color: #000000;
     height: calc(min(3vw, 34px) + 10px);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
+div#link {
+    position: relative;
+    height: calc(min(3vw, 34px) + 10px);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
 div#artworkcredit h3{
 padding: 15px;
@@ -242,19 +260,6 @@ section#links{
 section#social{
   min-height: 60vh; 
   padding-top: 30px;
-}
-
-.sticky {
-  display: flex;
-  background-color: #000000;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  margin: 0 auto;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
 }
 
 h3.link a:hover{
