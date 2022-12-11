@@ -19,21 +19,20 @@ p {
   padding: 10px;
   min-width: 280px;
   font-size: calc(0.8rem + 0.8vw);
-  background: -webkit-linear-gradient(#63bd61, #4fc0ad);
+  background: -webkit-linear-gradient(#63bd61, #17e9c6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center
 }
 
 .logo {
-    background: -webkit-linear-gradient(#63bd61, #4fc0ad);
+    background: -webkit-linear-gradient(#63bd61, #17e9c6);
     -webkit-mask-image: url("images/Logo.svg");
     mask-image: url("images/Logo.svg");
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     mask-position: center;
-    width: max(100%);
-    -webkit-mask-size: 100%;
+    -webkit-mask-size: 100% 100%;
     mask-size: 100%;
 }
 
@@ -54,7 +53,7 @@ a.social#spotify {
 }
 
 a.social {
-    background: -webkit-linear-gradient(#63bd61, #4fc0ad);
+    background: -webkit-linear-gradient(#63bd61, #17e9c6);
     display: inline-block;
     height: 40px;
     margin-left: 0.5em;
@@ -70,7 +69,7 @@ a.social {
 h1 {
     text-align: center;
     font-size: calc(min(8vw, 100px));
-    background: -webkit-linear-gradient(#63bd61, #4fc0ad);
+    background: -webkit-linear-gradient(#63bd61, #17e9c6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Bebas Neue', cursive;
@@ -81,7 +80,7 @@ h1 {
 h2 {
     text-align: center;
     font-size: calc(min(4vw, 50px));
-    background: -webkit-linear-gradient(#63bd61, #4fc0ad);
+    background: -webkit-linear-gradient(#63bd61, #17e9c6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Bebas Neue', cursive;
@@ -92,7 +91,7 @@ h2 {
 h3 {
     text-align: center;
     font-size: calc(min(3vw, 34px));
-    background: -webkit-linear-gradient(#63bd61, #4fc0ad);
+    background: -webkit-linear-gradient(#63bd61, #17e9c6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Bebas Neue', cursive;
@@ -133,7 +132,7 @@ h3 {
 
 section#top{
     margin: auto;
-    height: min(max(15vw, 100px), 300px);
+    height: max(min(6vw, 10%), 10vw);
     display:flex;
     flex-wrap: wrap;
     width: min(70%, 1500px);
