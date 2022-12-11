@@ -147,6 +147,16 @@ section#top{
     width: min(70%, 1500px);
     justify-content: center;
 }
+div.logo{
+    margin: auto;
+    height: max(min(6vw, 10%), 13vw);
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    background-color: #000000;
+}
+
 section#socials{
     width: 100%;
     height: 50px;
