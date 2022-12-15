@@ -60,6 +60,11 @@ a.social#spotify {
     mask-image: url("images/iconmonstr-spotify-1.svg");
 }
 
+a.social#facebook {
+    -webkit-mask-image: url("images/iconmonstr-facebook-4.svg");
+    mask-image: url("images/iconmonstr-facebook-4.svg");
+}
+
 a.social {
     background: -webkit-linear-gradient(#63bd61, #17e9c6);
     display: inline-block;
