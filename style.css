@@ -244,6 +244,12 @@ section#news{
     margin: auto;
 }
 
+section#history{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
 img#windmill{
     max-width: 1459px;
     width: 90%;
