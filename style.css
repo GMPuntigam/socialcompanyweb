@@ -273,7 +273,7 @@ section#sun{
 }
 
 section#band{
-    height: calc(min(70vh, 90vw));
+    height: calc(min(70vh, 100vw));
   }
 
 section#windmill{
@@ -318,8 +318,8 @@ position: relative;
 }
 
 div#links h3{
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
     margin: 0
     }
 
