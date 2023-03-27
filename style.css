@@ -22,10 +22,12 @@ body {
 }
 
 p {
+    width: min(70%, 1500px);
   position: relative;
   margin-top: auto;
   padding: 10px;
   min-width: 280px;
+  max-width: 80%;
   font-size: calc(0.8rem + 0.8vw);
   background: -webkit-linear-gradient(#63bd61, #17e9c6);
   -webkit-background-clip: text;
@@ -111,6 +113,18 @@ h3 {
     font-family: 'Bebas Neue', cursive;
     margin-block-start: 0px;
     margin-block-end: 10px;
+    padding: 5px;
+}
+
+h3.navigation{
+    display: inline-block;
+    font-size: calc(min(5vw, 34px));
+    background: -webkit-linear-gradient(#63bd61, #17e9c6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Bebas Neue', cursive;
+    margin-block-start: 0px;
+    margin-block-end: 10px;
     margin: auto;
     padding: 5px;
 }
@@ -131,7 +145,23 @@ h3 {
   display: grid;
   background-color: #000000;
 }
+
+.image-scroller {
+    height: 90%;
+    top: min(max(19vw, 160px), 350px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: sans-serif;
+    scroll-padding: 0;
+    margin: auto;
+    scroll-behavior: smooth;
+    scroll-padding-bottom: 4em;
+    display: grid;
+    background-color: #000000;
+  }
+
 .scroller section {
+    display: flex;
   scroll-snap-align: start;
   border-right: 1px solid white;
 	width: 80%;
@@ -142,6 +172,33 @@ h3 {
 	position: relative;
   scroll-behavior: smooth;
   scroll-margin-top: 1em;
+  justify-content: center;
+  flex-direction: column;
+align-items: center;
+}
+
+.image-scroller section {
+    display: flex;
+    scroll-snap-align: start;
+    border-right: 1px solid white;
+    width: 80%;
+    height: auto;
+    min-width: 101vw;
+    max-height: 130vh;
+    text-align: center;
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-margin-top: 1em;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+
+div#text {
+    display: flex;
+    width: min(70%, 1500px);
+    justify-content: center;
 }
 
 section#top{
@@ -165,9 +222,33 @@ div.logo{
 section#socials{
     width: 100%;
     height: 50px;
+    padding: 5px;
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+section#links{
+    padding: 5px;
+    width: 100%;
+    height: 54px;
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+section#links::after {
+    content: '';
+    position: relative;
+    border: 2px solid #63bd61;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    width: min(50%, 1000px);
+    margin: auto;
+    margin-bottom: 1px;
 }
 
 div#content {
@@ -188,9 +269,12 @@ div#wrap {
   }
 
 section#sun{
-  width: 80%;
-  padding-top: 30px;
+  height: calc(min(60vh, 60vw));
 }
+
+section#band{
+    height: calc(min(70vh, 90vw));
+  }
 
 section#windmill{
     height: 100%;
@@ -208,6 +292,15 @@ div#artworkcredit {
     flex-direction: column;
     justify-content: center;
 }
+div#links {
+    position: relative;
+    height: calc(min(5vw, 34px) + 10px);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
 
 div#link {
     position: relative;
@@ -218,12 +311,24 @@ div#link {
     justify-content: center;
 }
 
-
 div#artworkcredit h3{
 padding: 15px;
+bottom: 100%;
+position: relative;
 }
 
+div#links h3{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0
+    }
+
 img#sun {
+    max-width: 700px;
+    padding-top: 30px;
+}
+
+img.gallery {
     max-width: 700px;
     padding-top: 30px;
 }
@@ -282,17 +387,19 @@ section#images{
   min-height: 60vh; 
   padding-top: 30px;
 }
-section#links{
-  min-height: 60vh; 
-  padding-top: 30px;
-}
 
 section#social{
-  min-height: 60vh; 
   padding-top: 30px;
 }
 
 h3.link a:hover{
+    background: -webkit-linear-gradient(#63bd61, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Bebas Neue', cursive;
+}
+
+h3.navigation a:hover{
     background: -webkit-linear-gradient(#63bd61, #000000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
