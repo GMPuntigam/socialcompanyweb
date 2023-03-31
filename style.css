@@ -334,18 +334,15 @@ img.gallery {
 }
 
 img#Band {
+    width: min(60vh, 90vw);
     max-width: 900px;
     min-width: min(450px, 100vw);
     padding-top: 30px;
 }
 
-img#Band{
-    max-width: 900px;
-  }
-
 section#news{
+    height: calc(min(60vh, 60vw));
     width: 80%;
-    height: 80%;
     margin: auto;
 }
 
