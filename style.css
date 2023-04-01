@@ -84,7 +84,7 @@ a.social {
 
 h1 {
     text-align: center;
-    font-size: calc(min(8vw, 100px));
+    font-size: calc(min(8vw, 100px, 10vh));
     background: -webkit-linear-gradient(#63bd61, #17e9c6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -95,7 +95,7 @@ h1 {
 
 h2 {
     text-align: center;
-    font-size: calc(min(4vw, 50px));
+    font-size: calc(min(4vw, 50px, 7vh));
     background: -webkit-linear-gradient(#63bd61, #17e9c6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -106,7 +106,7 @@ h2 {
 
 h3 {
     text-align: center;
-    font-size: calc(min(3vw, 34px));
+    font-size: calc(min(3vw, 34px,5vh));
     background: -webkit-linear-gradient(#63bd61, #17e9c6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -324,6 +324,7 @@ div#links h3{
     }
 
 img#sun {
+    width: min(60vh, 90vw);
     max-width: 700px;
     padding-top: 30px;
 }
@@ -341,7 +342,7 @@ img#Band {
 }
 
 section#news{
-    height: calc(min(60vh, 60vw));
+    height: calc(min(70vh, 60vw));
     width: 80%;
     margin: auto;
 }
