@@ -270,8 +270,15 @@ div#wrap {
   }
 
 section#sun{
-  height: calc(min(60vh, 60vw));
+  height: calc(min(60vh, 80vw));
 }
+
+img#sun {
+    width: min(60vh, 90vw);
+    max-width: min(700px, 70vw);
+    padding-top: 30px;
+}
+
 
 section#band{
     height: calc(min(70vh, 100vw));
@@ -324,11 +331,6 @@ div#links h3{
     margin: 0
     }
 
-img#sun {
-    width: min(60vh, 90vw);
-    max-width: 700px;
-    padding-top: 30px;
-}
 
 img.gallery {
     max-width: 700px;
