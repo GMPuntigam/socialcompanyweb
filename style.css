@@ -22,14 +22,14 @@ body {
 }
 
 p {
-    width: min(70%, 1500px);
+  width: min(70%, 1500px);
   position: relative;
   margin-top: auto;
   margin-bottom: 2cm;
   padding: 10px;
   min-width: 280px;
   max-width: 80%;
-  font-size: calc(0.8rem + 0.8vw);
+  font-size: min(calc(0.8rem + 0.8vw), 35px);
   background: -webkit-linear-gradient(#63bd61, #17e9c6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
