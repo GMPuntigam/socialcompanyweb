@@ -342,9 +342,9 @@ img.gallery.last {
 }
 
 img#Band {
-    width: min(60vh, 90vw);
+    width: min(55vh, 90vw);
     max-width: 900px;
-    min-width: min(450px, 100vw);
+    min-width: min(450px, 90vw);
     padding-top: 30px;
 }
 
