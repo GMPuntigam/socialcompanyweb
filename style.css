@@ -25,6 +25,7 @@ p {
     width: min(70%, 1500px);
   position: relative;
   margin-top: auto;
+  margin-bottom: 2cm;
   padding: 10px;
   min-width: 280px;
   max-width: 80%;
@@ -332,6 +333,12 @@ img#sun {
 img.gallery {
     max-width: 700px;
     padding-top: 30px;
+}
+
+img.gallery.last {
+    max-width: 700px;
+    padding-top: 30px;
+    padding-bottom: 2cm;
 }
 
 img#Band {
