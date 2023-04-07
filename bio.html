@@ -12,17 +12,17 @@
         <title>Social Company</title>
     </head>
 <body>
-    <script src="scripts/background_dots.js"></script>
+    <div id="dots"></div>
     <div id="content">
         <section id="top">
-            <div class = "logo"></div>
+            <a class = "logo" href="/"></a>
         </section>
         <section id="links">
             <div id = "links">
-                <h3 class="navigation"><a href="index.html">News</a></h3>
-                <h3 class="navigation"><a href="history.html">Past Shows</a></h3>
-                <h3 class="navigation"><a href="bio.html">Bio</a></h3>
-                <h3 class="navigation"><a href="gallery.html">Gallery</a></h3>
+                <a class="navigation" href="/">News</a>
+                <a class="navigation" href="history.html">Past Shows</a>
+                <a class="navigation" href="bio.html">Bio</a>
+                <a class="navigation" href="gallery.html">Gallery</a>
             </div>
         </section>
         <section id="socials">
@@ -34,14 +34,14 @@
             </div>
         </section>
         <article class="scroller">
-            <section>
-                <img id="Band" src="images/Band_Faces_drawn.png" width="60%">
+            <section id="band">
+                <img id="Band" src="images/Band_Faces_drawn.png" width="60%" alt="Social_Company_Faces_drawn">
                 <div id="artworkcredit">
-                    <h3 class="link"><a href="https://www.fiverr.com/brokoola">Artwork by Jan Tomić</a></h3>
+                    <h3 class="link"><a href="https://www.fiverr.com/brokoola" target="_blank">Artwork by Jan Tomić</a></h3>
                 </div>
             </section>
             <section>
-                <h1>Bio</h3>
+                <h1>Bio</h1>
                 <div id="text">
                     <p>Love life, love yourself. "Good Life" is the first studio album of the band Social Company from Cologne, an emotional journey in search of anchoring in life and one's own place in society in the face of the climate catastrophe, global crisis and ruthless capitalism. The four musicians deliver ten new songs on the album, which stylistically move between punk, alternative rock, indie and pop. Compared to the previous EP "Lakehouse Sessions", the musical range is again significantly increased. Between soft piano solos, radiant trumpet sounds and groovy riffs, each song offers a unique experience. The album "Good Life" is a guarantee for adrenaline and endorphins. It is the second studio project of Social Company. 
 
@@ -49,15 +49,26 @@
                     Social Company makes unique music for everyone and is convincing with energetic music and passionate performances. They bring the good life to every stage.</p>
                 </div>            
             </section>
-            
-
-            
-            <div>
-                <section id="bio">
-                </section>
-            </div>
+            <section id="footer">
+                <div class="container">
+                    <div class="column one-fourth">
+                        <a href="impressum.html">Impressum</a>
+                        </div>
+                    <div class="column one-fourth">
+                        <a href="mailto:info@socialcompany.band?subject=Mail via Website">Kontakt</a>
+                    </div>
+                    <div class="column one-fourth">	
+                        <a type="application/pdf" href="content\Social Company - Good Life Presskit (English) - Google Docs.pdf">Pressemappe</a>
+                    </div>
+                    <div class="column one-fourth">
+                        <a type="application/pdf" href="content\Tech-Rider Social Company.pdf">Technical Rider</a>
+                    </div>
+                </div>
+                <div>© 2023 by Social Company</div>
+                <div><a href="https://www.fiverr.com/brokoola" class="footer" target="_blank">Artworks by Jan Tomić</a></div>
+            </section>
         </article>
     </div>
-    
+    <script src="scripts/background_dots.js"></script>
 </body>
 </html>

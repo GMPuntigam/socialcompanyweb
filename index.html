@@ -12,19 +12,18 @@
         <title>Social Company</title>
     </head>
 <body>
-    <script src="scripts/background_dots.js"></script>
+    <div id="dots"></div>
     <div id="content">
         <section id="top">
-            <div class = "logo"></div>
+            <a class = "logo" href="/"></a>
         </section>
         <section id="links">
             <div id = "links">
-                <h3 class="navigation"><a href="index.html">News</a></h3>
-                <h3 class="navigation"><a href="history.html">Past Shows</a></h3>
-                <h3 class="navigation"><a href="bio.html">Bio</a></h3>
-                <h3 class="navigation"><a href="gallery.html">Gallery</a></h3>
-                <h3 class="navigation"><a target="_blank" rel="noopener noreferrer"  href="https://www.seedshirt.de/socialcompany">Shirts bestellen</a></h3>
-            </div>
+                <a class="navigation" href="/">News</a>
+                <a class="navigation" href="history.html">Past Shows</a>
+                <a class="navigation" href="bio.html">Bio</a>
+                <a class="navigation" href="gallery.html">Gallery</a>
+                </div>
         </section>
         <section id="socials">
             <div id = "socials">
@@ -35,44 +34,60 @@
             </div>
         </section>
         <article class="scroller">
-            <section id="band">
-                <img id="Band" src="images/Band_Faces_drawn.png">
-                <div id="artworkcredit">
-                    <h3 class="link"><a href="https://www.fiverr.com/brokoola">Artwork by Jan Tomić</a></h3>
-                </div>
-            </section>
             
-            <div>
-                <section id="news">
-                    <h1>Upcoming Shows</h3>
-                    <h2>14.04.2023 The Tube Club </h2>
-                    <h3>Kurze Str. 9, 40213 Düsseldorf</h3>
-                    <h2>22.04.2023 Ufo Jugendkulturhaus </h2>
-                    <h3>Kölner Str. 68, 51429 Bergisch Gladbach</h3>
-                </section>
-            </div>
+                
+            <section id="news">
+                <h1>Upcoming Shows</h1>
+                <h2>14.04.2023 The Tube Club </h2>
+                <h3>Kurze Str. 9, 40213 Düsseldorf</h3>
+                <h3 class="link"><a href="https://karten.bz-ticket.de/p/reservix/event/2065255" target="_blank">Tickets</a></h3>
+                <h2>22.04.2023 Ufo Jugendkulturhaus </h2>
+                <h3>Kölner Str. 68, 51429 Bergisch Gladbach</h3>
+            </section>
+            <section>
+                <h2 class="link"><a href="https://bonn.fm/social-company-interview/" target="_blank">Interview mit BonnFM</a></h3>
+            </section>
             <section id="sun">
-                <img id="sun" src="images/Sun.png" width="60%">
+                <img id="sun" src="images/Sun.png" width="60%" alt="Social_Company_Sun">
             </section>
             <div>
                 <section>
-                    <h1 class="link"><a href="https://open.spotify.com/album/5Ft4xkVIGLG9wnTI5L9nzT?si=JyncQwu1RLeQeGNhAPM-_g">Out now: Good Life</a></h3>
+                    <h1 class="link"><a target="_blank" href="https://open.spotify.com/album/5Ft4xkVIGLG9wnTI5L9nzT?si=JyncQwu1RLeQeGNhAPM-_g">Out now: Good Life</a></h3>
                         <!-- <div id="wrap">
                             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5Ft4xkVIGLG9wnTI5L9nzT?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                         </div> -->
                         <!-- <div id="wrap"> -->
-                        <img id="songs" src="images/Songs.png">
                     <!-- </div> -->
                 </section>
             </div>
             <div>
-                <section>
-                    <img id="windmill" src="images/Windmill.png">
+                <section id="windmill">
+                    <img id="windmill" src="images/Windmill.png" alt="Social_Company_Windmill">
                     
                 </section>
             </div>
-            
+            <section id="footer">
+                <div class="container">
+                    <div class="column one-fourth">
+                        <a href="impressum.html">Impressum</a>
+                        </div>
+                    <div class="column one-fourth">
+                        <a href="mailto:info@socialcompany.band?subject=Mail via Website">Kontakt</a>
+                    </div>
+                    <div class="column one-fourth">	
+                        <a type="application/pdf" href="content\Social Company - Good Life Presskit (English) - Google Docs.pdf">Pressemappe</a>
+                    </div>
+                    <div class="column one-fourth">
+                        <a type="application/pdf" href="content\Tech-Rider Social Company.pdf">Technical Rider</a>
+                    </div>
+                </div>
+                <div>© 2023 by Social Company</div>
+                <div><a href="https://www.fiverr.com/brokoola" class="footer" target="_blank">Artworks by Jan Tomić</a></div>
+            </section>
         </article>
-    </div>
+        </div>
+        
+    <script src="scripts/background_dots.js"></script>
+    
 </body>
 </html>

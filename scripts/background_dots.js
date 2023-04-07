@@ -1,4 +1,4 @@
-function freshDot(){
+function freshDot(dots_div){
     var rgb3 = [];
     for (var i=0; i<3; i++) rgb3[i] = rgb1[i]+Math.random()*(rgb2[i]-rgb1[i])|0;
     var newColor = '#' + rgb3
@@ -13,16 +13,16 @@ function freshDot(){
     this.obj.style.height =  this.size + 'px';
     this.obj.style.width = this.size + 'px';
 
+    return this.obj
     
-    document.body.appendChild(this.obj);
 }
 var rgb1 = rgb("#00f5cc");
 var rgb2 = rgb("#17e9c6");
-var dot = [];
+dots_div = document.getElementById('dots');
 for(var i = 0 ; i < 200; i++ ){
-    dot.push(new freshDot());
+    dot = freshDot(dots_div);
+    dots_div.appendChild(dot);
     }
-
 function rgb(string){
     return string.match(/\w\w/g).map(function(b){ return parseInt(b,16) })
 }
