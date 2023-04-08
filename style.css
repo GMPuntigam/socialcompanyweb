@@ -96,6 +96,22 @@ a.social {
     background-color: #000000;
 }
 
+a.social:hover {
+    background: -webkit-linear-gradient(#63bd61, #214121);
+    display: inline-block;
+    height: 40px;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    width: 40px;
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+    background-color: #000000;
+}
+
+
 h1 {
     text-align: center;
     font-size: calc(min(8vw, 100px, 10vh));
@@ -134,7 +150,7 @@ a.navigation{
     text-align: center;
     display: inline-block;
     font-size: calc(min(5vw, 34px));
-    background: -webkit-linear-gradient(#63bd61, #17e9c6);
+    background: -webkit-linear-gradient(#9eecff, #834eff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Bebas Neue', cursive;
@@ -520,27 +536,15 @@ a.footer:hover{
     transition: text-decoration-color 0.4s;
 }
 
-h1.link a:hover{
-    background: -webkit-linear-gradient(#63bd61, #000000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Bebas Neue', cursive;
-}
-h2.link a:hover{
-    background: -webkit-linear-gradient(#63bd61, #000000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Bebas Neue', cursive;
-}
-h3.link a:hover{
+h1.link a:hover, h2.link a:hover, h3.link a:hover, a.navigation:hover{
     background: -webkit-linear-gradient(#63bd61, #000000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Bebas Neue', cursive;
 }
 
-a.navigation:hover{
-    background: -webkit-linear-gradient(#63bd61, #000000);
+h1.link, h2.link, h3.link, a.navigation{
+    background: -webkit-linear-gradient(#9eecff, #834eff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Bebas Neue', cursive;
