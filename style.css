@@ -162,7 +162,7 @@ a.navigation{
     width: 23px;
   }
   
-@media (max-width: 767px) { 
+@media (pointer: coarse) and (hover: none) { 
     .scroller::-webkit-scrollbar{
         display:none;
     }
