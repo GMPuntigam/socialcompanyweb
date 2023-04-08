@@ -278,7 +278,9 @@ align-items: center;
     flex-wrap: nowrap;
 }
 
-
+div.text {
+    padding:5px;
+}
 
 div#text {
     display: flex;
@@ -288,16 +290,17 @@ div#text {
 
 section#top{
     margin: auto;
-    height: min(max(min(6vw, 10%), 13vw), 300px);
+    height: min(max(min(6vw, 10%), 12vw), 300px);
     display:flex;
     flex-wrap: wrap;
     width: min(70%, 1500px);
     justify-content: center;
+    flex-direction: column;
 }
 a.logo{
     display: block;
     margin: auto;
-    height: min(max(min(6vw, 10%), 13vw), 300px);
+    height: min(max(min(6vw, 10%), 11vw), 300px);
     display:flex;
     flex-wrap: wrap;
     width: 100%;
@@ -480,10 +483,10 @@ section#social{
 }
 
 section#footer{
-    min-height: 10vh; 
     background-color: rgb(0, 0, 0);
     color: white;
-    padding-top: 10px
+    padding-top: 10px;
+    bottom: 0;
   }
   
 a.footer:any-link{
