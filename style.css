@@ -433,7 +433,7 @@ img#Band {
 }
 
 section#news{
-    height: calc(min(70vh, 60vw));
+    /* height: calc(min(70vh, 60vw)); */
     width: 80%;
     margin: auto;
 }
